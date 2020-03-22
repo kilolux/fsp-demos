@@ -1,10 +1,18 @@
 # fsp-demos
 Simple analysis tools and demonstrations for financial signal processing.
 
-## Tasks
+## Cleanup Tasks
 - [x] Cleanup Markdown text
-- [x] Add simple moving average demo
 - [x] Rename sine wave plotting function
-- [ ] Add exponential moving average demo
+- [ ] Fix alpha decay plot (double bar graph)
+- [ ] Check alpha decay equation
+- [ ] Add Markdown explanations
+- [ ] Add legends to plots
+- [ ] Move testing code to end of notebook
+
+
+## Files To Add
+- [x] Add simple moving average demo
+- [x] Add exponential moving average demo
 - [ ] Add simple & exponential comparison demo
-- [ ] Add moving average covergence divergence demo
+- [ ] Add moving average convergence divergence demo
