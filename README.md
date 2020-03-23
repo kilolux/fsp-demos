@@ -7,8 +7,8 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Fix alpha decay plot (double bar graph)
 - [x] Check alpha decay equation
 - [ ] Cleanup Markdown Introduction
-- [ ] Add legends to plots
-- [ ] Move testing code to end of notebook
+- [x] Add legends to plots
+- [x] Move testing code to end of notebook
 - [ ] Add a sine wave plot
 - [ ] Remove irrelevant plots
 - [ ] Final plot should show Value, EMA(low), and EMA(high)
