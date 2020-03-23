@@ -6,7 +6,7 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Rename sine wave plotting function
 - [x] Fix alpha decay plot (double bar graph)
 - [x] Check alpha decay equation
-- [ ] Cleanup Markdown Introduction
+- [x] Cleanup Markdown Introduction
 - [x] Add legends to plots
 - [x] Move testing code to end of notebook
 - [ ] Add a sine wave plot
