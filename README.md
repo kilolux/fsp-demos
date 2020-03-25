@@ -20,3 +20,7 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [ ] Add simple & exponential comparison demo
 - [ ] Add moving average convergence divergence demo
 - [ ] Add real data import demo (simple plotting without analysis)
+
+
+## License
+Distributed under the MIT license. See LICENSE for details.
