@@ -9,9 +9,9 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Cleanup Markdown Introduction
 - [x] Add legends to plots
 - [x] Move testing code to end of notebook
-- [ ] Add a sine wave plot
-- [ ] Remove irrelevant plots
-- [ ] Final plot should show Value, EMA(low), and EMA(high)
+- [x] Add a sine wave plot
+- [x] Remove irrelevant plots
+- [x] Final plot should show Value, EMA(low), and EMA(high)
 
 
 ## Files To Add
