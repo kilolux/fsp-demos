@@ -17,7 +17,7 @@ Simple analysis tools and demonstrations for financial signal processing.
 ## Files To Add
 - [x] Add simple moving average demo
 - [x] Add exponential moving average demo
-- [ ] Add simple & exponential comparison demo
+- [x] Add simple & exponential comparison demo
 - [ ] Add moving average convergence divergence demo
 - [ ] Add real data import demo (simple plotting without analysis)
 
