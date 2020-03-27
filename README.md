@@ -12,13 +12,14 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Add a sine wave plot
 - [x] Remove irrelevant plots
 - [x] Final plot should show Value, EMA(low), and EMA(high)
+- [ ] Convert Python lists to Numpy arrays where applicable
 
 
 ## Files To Add
 - [x] Add simple moving average demo
 - [x] Add exponential moving average demo
 - [x] Add simple & exponential comparison demo
-- [ ] Add moving average convergence divergence demo
+- [x] Add moving average convergence divergence demo
 - [ ] Add real data import demo (simple plotting without analysis)
 
 
