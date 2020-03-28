@@ -12,7 +12,9 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Add a sine wave plot
 - [x] Remove irrelevant plots
 - [x] Final plot should show Value, EMA(low), and EMA(high)
-- [ ] Convert Python lists to Numpy arrays where applicable
+- [x] Convert Python lists to Numpy arrays in MACD notebook
+- [ ] Convert python lists to Numpy arrays in other notebooks
+- [ ] Add bar chart to MACD notebook
 
 
 ## Files To Add
