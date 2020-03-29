@@ -8,7 +8,7 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Add bar chart to MACD notebook
 - [ ] Use subplots on MACD notebook to align x axes on plots.
 - [x] Move helper functions in MACD notebook to dedicated file.py
-- [] Add comprehensive tests to notebooks
+- [ ] Add comprehensive tests to notebooks
 
 
 
