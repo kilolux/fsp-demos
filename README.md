@@ -1,6 +1,17 @@
 # fsp-demos
 Simple analysis tools and demonstrations for financial signal processing.
 
+
+## Introduction
+- [ ] add screenshot of completed plot
+
+
+## Technologies Used
+- Languages - Python3
+- Libraries - matplotlib, numpy, pandas
+- Live Editor - Jupyter Notebook
+
+
 ## Cleanup Tasks
 - [x] Final plot should show Value, EMA(low), and EMA(high)
 - [x] Convert Python lists to Numpy arrays in MACD notebook
