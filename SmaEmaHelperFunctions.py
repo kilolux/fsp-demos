@@ -1,4 +1,4 @@
-# macdHelperFunctions.py
+# SmaEmaHelperFunctions.py
 
 #################################################################
 
@@ -6,12 +6,11 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-#from matplotlib.pyplot import figure
 
 
 ################################################################
 
-## Exponential Moving Average (EMA) Functions
+# EMA Functions
 
 # Calculate the alpha value for a desired period.
 def calculateAlpha(ema_period):
@@ -49,57 +48,74 @@ def getNumerator(price_data, price_data_index, number_of_terms):
 
 # Returns a single Exponential Moving Average value.
 def getEMA(price_data, price_data_index, number_of_terms):
-    #print("index:",price_data_index,"alpha:",alpha,"number_of_terms:",number_of_terms)
     if (number_of_terms - price_data_index) > 1:
+        # There are too many terms for the given index.
         return 0
     else:
         top = getNumerator(price_data, price_data_index, number_of_terms)
         bottom = getDenominator(number_of_terms)
-        EMA = np.array([top / bottom])
+        EMA = top / bottom
         return EMA
 
-# Test getEMA
-#testNPdata = np.array([0.0, 1.0, 2.0, 1.0, 0.0, 1.0, 2.0, 1.0])
-#answer = getEMA(testNPdata, 3, 2)
-#print("answer at index 3:", answer)
     
-    
-
 # Returns a list of all EMA values.
 def getEMAdataset(price_data, number_of_terms):
-    ema_data = np.zeros(np.size(price_data))
+    ema_data = []
     i = 0
-    while i < np.size(price_data):
+    while i < len(price_data):
         datum = getEMA(price_data, i, number_of_terms)
-        ema_data[i] = datum
+        ema_data.append(datum)
         i = i + 1
     return ema_data
 
-#answerArray = getEMAdataset(testNPdata, 2)
-#print("answerArray:", answerArray)
+################################################################
 
-####################################################################
+# SMA Functions
 
-## Plotting Function
+# Calculates the average given a list of numbers.
+def getAvg(data):
+    total = 0
+    i = 0
+    while i < len(data):
+        total = total + data[i]
+        i = i + 1
+    # Catch divide by zero errors.
+    if i == 0: 
+        return 0
+    else:
+        return total / i
 
-# Plots 3 lines: raw data, EMA(period_1), EMA(period_2)
-def calculateAndPlotEMA(data, ema_period_1, ema_period_2):
-    ema_1 = getEMAdataset(data, ema_period_1)
-    ema_2 = getEMAdataset(data, ema_period_2)
-    x = np.arange(len(data))
-    plt.plot(x, data)
-    plt.plot(x, ema_1)
-    plt.plot(x, ema_2)
-    ema_legend_text_1 = "EMA(" + str(ema_period_1) + ")"
-    ema_legend_text_2 = "EMA(" + str(ema_period_2) + ")"
-    plt.legend(['Value', ema_legend_text_1, ema_legend_text_2])
-    plt.title("Exponential Moving Averages")
-    plt.grid(b=True, which='major', color='gray', linestyle=':')
-    plt.show()
     
-########################################################################
+# Produces a subset list given a list of numbers, the final 
+#desired index, and the desired subset length.
+def getMovingList(data, index, length):
+    listEnd = index + 1
+    listStart = index - length + 1
+    result = data[listStart:listEnd]
+    # Note that when index - length < -1, then the result will be [] (empty)
+    return result
 
-## Sine Wave Function
+
+# Calculates a single average.
+def getSingleSMA(data, index, sma_period):
+    movingList = getMovingList(data, index, sma_period)
+    average = getAvg(movingList)
+    return average
+
+
+# Calculates the entire list of averages.
+def getSMAlist(data, sma_period):
+    smaList = []
+    i = 0
+    while i < len(data):
+        value = getSingleSMA(data, i, sma_period)
+        smaList.append(value)
+        i = i + 1
+    return smaList
+
+################################################################
+
+# Plotting Functions
 
 # Generates a sine wave.
 def generateSineWave(period, amplitude, sigma, end):
