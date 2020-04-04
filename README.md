@@ -20,7 +20,7 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Move helper functions in MACD notebook to dedicated file.py
 - [x] Add comprehensive tests to SMA notebook
 - [x] Add comprehensive tests to EMA notebook
-- [ ] Add comprehensive tests to SMA-EMA comparison notebook
+- [x] Add comprehensive tests to SMA-EMA comparison notebook
 - [ ] Add comprehensive tests to MACD notebook
 
 
