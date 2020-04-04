@@ -10,7 +10,7 @@ import numpy as np
 
 ################################################################
 
-# EMA Functions
+## Exponential Moving Average (EMA) Functions
 
 # Calculate the alpha value for a desired period.
 def calculateAlpha(ema_period):
@@ -54,17 +54,17 @@ def getEMA(price_data, price_data_index, number_of_terms):
     else:
         top = getNumerator(price_data, price_data_index, number_of_terms)
         bottom = getDenominator(number_of_terms)
-        EMA = top / bottom
+        EMA = np.array([top / bottom])
         return EMA
 
     
 # Returns a list of all EMA values.
 def getEMAdataset(price_data, number_of_terms):
-    ema_data = []
+    ema_data = np.zeros(np.size(price_data))
     i = 0
-    while i < len(price_data):
+    while i < np.size(price_data):
         datum = getEMA(price_data, i, number_of_terms)
-        ema_data.append(datum)
+        ema_data[i] = datum
         i = i + 1
     return ema_data
 

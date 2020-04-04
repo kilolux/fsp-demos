@@ -6,7 +6,6 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-#from matplotlib.pyplot import figure
 
 
 ################################################################
@@ -49,8 +48,8 @@ def getNumerator(price_data, price_data_index, number_of_terms):
 
 # Returns a single Exponential Moving Average value.
 def getEMA(price_data, price_data_index, number_of_terms):
-    #print("index:",price_data_index,"alpha:",alpha,"number_of_terms:",number_of_terms)
     if (number_of_terms - price_data_index) > 1:
+        # There are too many terms for the given index.
         return 0
     else:
         top = getNumerator(price_data, price_data_index, number_of_terms)
@@ -58,13 +57,7 @@ def getEMA(price_data, price_data_index, number_of_terms):
         EMA = np.array([top / bottom])
         return EMA
 
-# Test getEMA
-#testNPdata = np.array([0.0, 1.0, 2.0, 1.0, 0.0, 1.0, 2.0, 1.0])
-#answer = getEMA(testNPdata, 3, 2)
-#print("answer at index 3:", answer)
     
-    
-
 # Returns a list of all EMA values.
 def getEMAdataset(price_data, number_of_terms):
     ema_data = np.zeros(np.size(price_data))
@@ -75,8 +68,7 @@ def getEMAdataset(price_data, number_of_terms):
         i = i + 1
     return ema_data
 
-#answerArray = getEMAdataset(testNPdata, 2)
-#print("answerArray:", answerArray)
+
 
 ####################################################################
 
