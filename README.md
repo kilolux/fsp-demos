@@ -21,7 +21,7 @@ Simple analysis tools and demonstrations for financial signal processing.
 - [x] Add comprehensive tests to SMA notebook
 - [x] Add comprehensive tests to EMA notebook
 - [x] Add comprehensive tests to SMA-EMA comparison notebook
-- [ ] Add comprehensive tests to MACD notebook
+- [x] Add comprehensive tests to MACD notebook
 - [ ] Migrate all functions to a single helper file
 
 
