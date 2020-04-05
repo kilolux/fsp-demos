@@ -1,4 +1,4 @@
-# macdHelperFunctions.py
+# EMAHelperFunctions.py
 
 #################################################################
 
