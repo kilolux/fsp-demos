@@ -3,11 +3,12 @@ Simple analysis tools and demonstrations for financial signal processing.
 
 
 ## Introduction
-- [ ] add screenshot of completed plot
 Exponential Moving Averages Plotting
+
 ![Image of EMA Plot](ema_example.png)
 
 MACD Plotting
+
 ![Image of MACD Plot](macd_example.png)
 
 ## Technologies Used
