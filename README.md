@@ -8,20 +8,12 @@ Simple analysis tools and demonstrations for financial signal processing.
 
 ## Technologies Used
 - Languages - Python3
-- Libraries - matplotlib, numpy, pandas
+- Libraries - matplotlib, numpy, pandas, unittest
 - Live Editor - Jupyter Notebook
 
 
 ## Cleanup Tasks
-- [x] Final plot should show Value, EMA(low), and EMA(high)
-- [x] Convert Python lists to Numpy arrays in MACD notebook
-- [x] Add bar chart to MACD notebook
 - [ ] Use subplots on MACD notebook to align x axes on plots.
-- [x] Move helper functions in MACD notebook to dedicated file.py
-- [x] Add comprehensive tests to SMA notebook
-- [x] Add comprehensive tests to EMA notebook
-- [x] Add comprehensive tests to SMA-EMA comparison notebook
-- [x] Add comprehensive tests to MACD notebook
 - [ ] Migrate all functions to a single helper file
 
 
