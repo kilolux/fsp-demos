@@ -20,6 +20,8 @@ MACD Plotting
 ## Cleanup Tasks
 - [ ] Use subplots on MACD notebook to align x axes on plots.
 - [ ] Migrate all functions to a single helper file
+- [ ] Organize directory with folders
+- [ ] Add [Plotly](https://plotly.com/python/) for interactive plots
 
 
 ## License
