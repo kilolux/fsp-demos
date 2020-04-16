@@ -14,7 +14,7 @@ MACD Plotting
 ## Technologies Used
 - Languages - Python3
 - Libraries - matplotlib, numpy, pandas, unittest
-- Live Editor - Jupyter Notebook
+- Live Editor - [Jupyter Notebook](https://jupyter.org/)
 
 
 ## Future Work
