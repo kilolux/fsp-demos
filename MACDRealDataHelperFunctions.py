@@ -75,7 +75,7 @@ def getEMAdataset(price_data, number_of_terms):
 ## Plotting Function
 
 # Plots 3 lines: raw data, EMA(period_1), EMA(period_2)
-def calculateAndPlotEMA(data, ema_period_1, ema_period_2):
+def calculateAndPlotEMA(data, ema_period_1, ema_period_2, plot_after_long_period):
     ema_1 = getEMAdataset(data, ema_period_1)
     ema_2 = getEMAdataset(data, ema_period_2)
     x = np.arange(len(data))
@@ -87,6 +87,9 @@ def calculateAndPlotEMA(data, ema_period_1, ema_period_2):
     plt.legend(['Value', ema_legend_text_1, ema_legend_text_2])
     plt.title("Exponential Moving Averages")
     plt.grid(b=True, which='major', color='gray', linestyle=':')
+    if plot_after_long_period:
+        plt.xlim(left=ema_period_2+1)
+        plt.ylim(bottom=min(data)-5)
     plt.show()
     
 ########################################################################
